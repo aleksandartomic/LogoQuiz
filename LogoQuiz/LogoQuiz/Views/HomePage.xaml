@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage xmlns:base="clr-namespace:LogoQuiz.Views.Base"
+			   xmlns="http://xamarin.com/schemas/2014/forms"
+			   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			   xmlns:converter="clr-namespace:LogoQuiz.Converters" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+			   mc:Ignorable="d"
+			   x:Class="LogoQuiz.Views.HomePage"
+			   x:Name="homePage">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<converter:ImageResourceConverter x:Key="ImageResourceConverter"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<StackLayout Padding="10">
+			<flv:FlowListView FlowColumnCount="4" 
+							  SeparatorVisibility="None"
+							  HasUnevenRows="True"
+							  FlowItemsSource="{Binding Logos}">
+				<flv:FlowListView.FlowColumnTemplate>
+					<DataTemplate>
+						<Image Aspect="AspectFit"
+							   HeightRequest="80"
+							   Margin="10"
+							   Source="{Binding ImageUrl, Converter={StaticResource ImageResourceConverter}}">
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, 
+																		Source={x:Reference Name=homePage}}"
+														  CommandParameter="{Binding Id}"/>
+							</Image.GestureRecognizers>
+						</Image>
+					</DataTemplate>
+				</flv:FlowListView.FlowColumnTemplate>
+			</flv:FlowListView>
+		</StackLayout>
+	</ContentPage.Content>
+</base:BasePage>
