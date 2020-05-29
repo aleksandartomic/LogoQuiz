@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage xmlns:base="clr-namespace:LogoQuiz.Views.Base" 
+			   xmlns="http://xamarin.com/schemas/2014/forms"
+			   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			   xmlns:helpers="clr-namespace:LogoQuiz.Helpers" 
+			   xmlns:controls="clr-namespace:LogoQuiz.Controls" 
+			   xmlns:converter="clr-namespace:LogoQuiz.Converters"
+			   mc:Ignorable="d"
+			   x:Class="LogoQuiz.Views.LevelsPage"
+			   x:Name="levelsPage">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<converter:OpenLevelConverter x:Key="OpenLevelConverter"/>
+			<converter:TrueLogosConverter x:Key="TrueLogosConverter"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Points">
+			<!--<ToolbarItem.IconImageSource>
+				<FontImageSource FontFamily="{StaticResource MaterialFontFamily}"
+								 Glyph="{x:Static helpers:MaterialDesignIconFont.Point}" Size="50"/>
+			</ToolbarItem.IconImageSource>-->
+		</ToolbarItem>
+		<ToolbarItem Text="{Binding Points}"/>
+	</ContentPage.ToolbarItems>
+	<StackLayout>
+		<controls:LevelControl LevelText="Level 1"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 1'}"
+							   Visible="True"
+							   IsEnable="True"/>
+
+		<controls:LevelControl LevelText="Level 2"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 2'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 2'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 2'}"/>
+
+		<controls:LevelControl LevelText="Level 3"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 3'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"/>
+	</StackLayout>
+</base:BasePage>

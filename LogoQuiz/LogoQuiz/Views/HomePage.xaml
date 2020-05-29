@@ -4,10 +4,13 @@
 			   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 			   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-			   xmlns:converter="clr-namespace:LogoQuiz.Converters" xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+			   xmlns:converter="clr-namespace:LogoQuiz.Converters"
+			   xmlns:helpers="clr-namespace:LogoQuiz.Helpers"
+			   xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
 			   mc:Ignorable="d"
 			   x:Class="LogoQuiz.Views.HomePage"
-			   x:Name="homePage">
+			   x:Name="homePage"
+			   Title="{Binding Level}">
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -16,23 +19,40 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<StackLayout Padding="10">
+		<StackLayout>
 			<flv:FlowListView FlowColumnCount="4" 
 							  SeparatorVisibility="None"
 							  HasUnevenRows="True"
-							  FlowItemsSource="{Binding Logos}">
+							  FlowItemsSource="{Binding LevelLogos}">
 				<flv:FlowListView.FlowColumnTemplate>
 					<DataTemplate>
-						<Image Aspect="AspectFit"
+						<StackLayout WidthRequest="80">
+							<RelativeLayout>
+								<Image Aspect="AspectFit"
 							   HeightRequest="80"
 							   Margin="10"
 							   Source="{Binding ImageUrl, Converter={StaticResource ImageResourceConverter}}">
-							<Image.GestureRecognizers>
-								<TapGestureRecognizer Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, 
-																		Source={x:Reference Name=homePage}}"
+									<Image.GestureRecognizers>
+										<TapGestureRecognizer Command="{Binding Path=BindingContext.NavigateToDetailPageCommand, 
+																			Source={x:Reference Name=homePage}}"
 														  CommandParameter="{Binding Id}"/>
-							</Image.GestureRecognizers>
-						</Image>
+									</Image.GestureRecognizers>
+								</Image>
+
+								<Label FontFamily="{StaticResource MaterialFontFamily}"
+									   Text="{x:Static helpers:MaterialDesignIconFont.SuccessIcon}"
+									   TextColor="Green"
+									   Margin="70,0,0,0"
+									   FontSize="20"
+									   IsVisible="{Binding IsSucceed}">
+								</Label>
+							</RelativeLayout>
+							
+							<Label Text="{Binding Name}"
+								   IsVisible="{Binding IsSucceed}"
+								   HorizontalOptions="CenterAndExpand"
+								   HorizontalTextAlignment="Center"/>
+						</StackLayout>
 					</DataTemplate>
 				</flv:FlowListView.FlowColumnTemplate>
 			</flv:FlowListView>

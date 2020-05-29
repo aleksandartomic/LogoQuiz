@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
@@ -23,8 +24,20 @@ namespace LogoQuiz.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
+            global::Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental");
+
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            var libPath = Path.Combine(
+                System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments),
+                "..", "Library", "data");
+
+            if (!Directory.Exists(libPath))
+            {
+                Directory.CreateDirectory(libPath);
+            }
+
+            var dbPath = Path.Combine(libPath, "LogoQuiz.sqlite");
+            LoadApplication(new App(dbPath));
 
             return base.FinishedLaunching(app, options);
         }

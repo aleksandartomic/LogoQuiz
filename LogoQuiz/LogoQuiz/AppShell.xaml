@@ -5,7 +5,6 @@
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        mc:Ignorable="d"
        xmlns:local="clr-namespace:LogoQuiz.Views"
-       xmlns:icons="clr-namespace:LogoQuiz.Helpers"
        Title="LogoQuiz"
        x:Class="LogoQuiz.AppShell">
 
@@ -14,7 +13,7 @@
     -->
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Color x:Key="NavigationPrimary">#31C2C7</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -32,17 +31,20 @@
 
     <!-- Your Pages -->
 
-    <Shell.FlyoutHeader>
+    <!--<Shell.FlyoutHeader>
         <Grid BackgroundColor="Blue"/>
-    </Shell.FlyoutHeader>
+    </Shell.FlyoutHeader>-->
+    <TabBar>
+        <ShellContent ContentTemplate="{DataTemplate local:StartPage}" />
+    </TabBar>
 
-    <FlyoutItem Title="Play Logo Quiz">
+    <!--<FlyoutItem Title="Play Logo Quiz">
         <FlyoutItem.FlyoutIcon>
             <FontImageSource Color="Black"
                              FontFamily="{DynamicResource MaterialFontFamily}"
                              Glyph="{x:Static icons:MaterialDesignIconFont.Play}" />
         </FlyoutItem.FlyoutIcon>
-        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent ContentTemplate="{DataTemplate local:LevelsPage}" />
     </FlyoutItem>
 
     <FlyoutItem Title="Settings">
@@ -60,6 +62,5 @@
                              FontFamily="{DynamicResource MaterialFontFamily}"
                              Glyph="{x:Static icons:MaterialDesignIconFont.Star}" />
         </MenuItem.IconImageSource>
-    </MenuItem>
-    
+    </MenuItem>-->
 </Shell>

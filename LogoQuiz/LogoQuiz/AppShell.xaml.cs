@@ -12,13 +12,16 @@ namespace LogoQuiz
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("DetailPage", typeof(DetailPage));
+            Routing.RegisterRoute("HomePage", typeof(HomePage));
+            Routing.RegisterRoute("LevelsPage", typeof(LevelsPage));
+            Routing.RegisterRoute("SettingsPage", typeof(SettingsPage));
+            Routing.RegisterRoute("DetailPage", typeof(DetailPage));            
         }
 
-        private void RateApp_Click(object sender, EventArgs e)
-        {
-            FlyoutIsPresented = false;
-            DisplayAlert("Rate!", "You selected the Rate This App menu item.", "Ok");
-        }
+        //private void RateApp_Click(object sender, EventArgs e)
+        //{
+        //    FlyoutIsPresented = false;
+        //    DisplayAlert("Rate!", "You selected the Rate This App menu item.", "Ok");
+        //}
     }
 }

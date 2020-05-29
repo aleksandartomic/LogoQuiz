@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d"
+			 x:Class="LogoQuiz.Controls.LevelControl"
+			 xmlns:helpers="clr-namespace:LogoQuiz.Helpers" 
+			 xmlns:converter="clr-namespace:LogoQuiz.Converters"
+			 x:Name="levelControl">
+
+	<ContentView.Resources>
+		<ResourceDictionary>
+			<converter:InverseBoolConverter x:Key="InverseBoolConverter"/>
+		</ResourceDictionary>
+	</ContentView.Resources>
+
+	<ContentView.Content>
+		<Frame HasShadow="True"
+			   Padding="0"
+			   BorderColor="#21B5B9"
+			   CornerRadius="10"
+			   HeightRequest="80"
+			   Margin="10,5"
+			   IsEnabled="{Binding Source={x:Reference levelControl}, Path=IsEnable}">
+			<Frame.Triggers>
+				<Trigger TargetType="Frame"
+						 Property="IsEnabled" Value="True">
+					<Setter Property="BackgroundColor" Value="#DAFEFF"/>
+				</Trigger>
+				
+				<Trigger TargetType="Frame"
+						 Property="IsEnabled" Value="False">
+					<Setter Property="BackgroundColor" Value="#EAEAEA"/>
+				</Trigger>
+			</Frame.Triggers>
+			
+			<Frame.GestureRecognizers>
+				<TapGestureRecognizer Command="{Binding Source={x:Reference levelControl}, Path=NavigateCommand}"
+									  CommandParameter="{Binding Source={x:Reference levelControl}, Path=LevelText}"/>
+			</Frame.GestureRecognizers>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="4*"/>
+					<ColumnDefinition Width="4*"/>
+					<ColumnDefinition Width="2*"/>
+				</Grid.ColumnDefinitions>
+
+				<Label Grid.Column="0"
+					   Text="{Binding Source={x:Reference levelControl}, Path=LevelText}"
+					   FontSize="25" 
+					   VerticalTextAlignment="Center"
+					   Padding="10"/>
+
+				<Label Grid.Column="1"
+					   Text="{Binding Source={x:Reference levelControl}, Path=FormattedText}"
+					   FontSize="25"
+					   VerticalTextAlignment="Center"/>
+
+				<Label Grid.Column="2"
+					   FontSize="35"
+					   VerticalTextAlignment="Center"
+					   FontFamily="{StaticResource MaterialFontFamily}"
+					   Text="{Binding Source={x:Reference levelControl}, Path=IconFont}"
+					   TextColor="#5C59FF"
+					   IsVisible="{Binding Source={x:Reference levelControl}, Path=Visible}"/>
+				
+				<Label Grid.Column="2"
+					   FontSize="35"
+					   VerticalTextAlignment="Center"
+					   FontFamily="{StaticResource MaterialFontFamily}"
+					   Text="{x:Static helpers:MaterialDesignIconFont.LockedLevel}"
+					   TextColor="#FF5959"
+					   IsVisible="{Binding Source={x:Reference levelControl}, Path=Visible, Converter={StaticResource InverseBoolConverter}}"/>
+			</Grid>
+		</Frame>
+	</ContentView.Content>
+</ContentView>
