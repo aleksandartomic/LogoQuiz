@@ -79,7 +79,7 @@ namespace LogoQuiz.ViewModels
         {
             if (HintCount > 0)
             {
-                if (ClickHint == Logo.Name.Count())
+                if (ClickHint == Logo.Name.Count() || LogoName == Logo.Name)
                 {
                     Success();
                 }
@@ -175,7 +175,8 @@ namespace LogoQuiz.ViewModels
         public void AddHint()
         {
             var SumLogos = Logos.Sum(item => item.Point);
-            if (SumLogos == 75 || SumLogos == 150 || SumLogos == 225 || SumLogos == 300 || SumLogos == 375)
+            if (SumLogos == 75 || SumLogos == 150 || SumLogos == 225 || SumLogos == 300 || SumLogos == 375
+                || SumLogos == 450 || SumLogos == 525 || SumLogos == 600 || SumLogos == 675 || SumLogos == 750)
             {
                 HintCount += 10;
                 Preferences.Set("HintCount", HintCount);
