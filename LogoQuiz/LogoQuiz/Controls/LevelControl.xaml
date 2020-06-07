@@ -19,7 +19,7 @@
 		<Frame HasShadow="True"
 			   Padding="0"
 			   BorderColor="#21B5B9"
-			   CornerRadius="10"
+			   CornerRadius="40"
 			   HeightRequest="80"
 			   Margin="10,5"
 			   IsEnabled="{Binding Source={x:Reference levelControl}, Path=IsEnable}">
@@ -62,7 +62,7 @@
 					   VerticalTextAlignment="Center"
 					   FontFamily="{StaticResource MaterialFontFamily}"
 					   Text="{Binding Source={x:Reference levelControl}, Path=IconFont}"
-					   TextColor="#5C59FF"
+					   TextColor="#3B98FB"
 					   IsVisible="{Binding Source={x:Reference levelControl}, Path=Visible}"/>
 				
 				<Label Grid.Column="2"
@@ -70,7 +70,7 @@
 					   VerticalTextAlignment="Center"
 					   FontFamily="{StaticResource MaterialFontFamily}"
 					   Text="{x:Static helpers:MaterialDesignIconFont.LockedLevel}"
-					   TextColor="#FF5959"
+					   TextColor="#F57171"
 					   IsVisible="{Binding Source={x:Reference levelControl}, Path=Visible, Converter={StaticResource InverseBoolConverter}}"/>
 			</Grid>
 		</Frame>

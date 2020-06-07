@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace LogoQuiz.ViewModels
@@ -18,10 +19,10 @@ namespace LogoQuiz.ViewModels
         public LevelsPageViewModel()
         {
             NavigateToHomePageCommand = new Command(NavigateToHomePage);
-            Aaa();
+            LoadingList();
         }
 
-        public async void Aaa()
+        public async void LoadingList()
         {
             Logos = new ObservableCollection<Logo>(await Repository.GetLogosAsync());
         }
@@ -34,7 +35,7 @@ namespace LogoQuiz.ViewModels
 
         public async void NavigateToHomePage(object parameters)
         {
-            await Shell.Current.GoToAsync($"/HomePage?Level={parameters}");
+            await Shell.Current.GoToAsync($"/ListLogosPage?Level={parameters}");
         }
     }
 }

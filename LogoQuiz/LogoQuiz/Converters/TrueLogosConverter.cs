@@ -18,13 +18,13 @@ namespace LogoQuiz.Converters
         {
             Logos = (ObservableCollection<Logo>)value;
 
-            string c = parameter.ToString();
+            string param = parameter.ToString();
 
-            var a = from logo in Logos
-                    where c == logo.Level
+            var LevelLogos = from logo in Logos
+                    where param == logo.Level
                     select logo;
 
-            var trueLogos = from logo in a
+            var trueLogos = from logo in LevelLogos
                             where logo.IsSucceed == true
                             select logo;
 

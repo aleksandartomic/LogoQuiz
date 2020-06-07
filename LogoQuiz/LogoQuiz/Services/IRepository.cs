@@ -11,5 +11,6 @@ namespace LogoQuiz.Services
 
         Task<T> GetLogoAsync(string id);
 
+        void Save();
     }
 }

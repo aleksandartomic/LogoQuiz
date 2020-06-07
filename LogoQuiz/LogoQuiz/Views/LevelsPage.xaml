@@ -48,5 +48,19 @@
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 3'}"
 							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"
 							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"/>
+		
+		<controls:LevelControl LevelText="Level 4"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 4'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 4'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 4'}"/>
+
+		<controls:LevelControl LevelText="Level 5"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 5'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 5'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 5'}"/>
 	</StackLayout>
 </base:BasePage>

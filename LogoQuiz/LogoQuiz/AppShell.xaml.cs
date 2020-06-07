@@ -12,10 +12,10 @@ namespace LogoQuiz
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("HomePage", typeof(HomePage));
+            Routing.RegisterRoute("ListLogosPage", typeof(ListLogosPage));
             Routing.RegisterRoute("LevelsPage", typeof(LevelsPage));
             Routing.RegisterRoute("SettingsPage", typeof(SettingsPage));
-            Routing.RegisterRoute("DetailPage", typeof(DetailPage));            
+            Routing.RegisterRoute("LogoPage", typeof(LogoPage));            
         }
 
         //private void RateApp_Click(object sender, EventArgs e)

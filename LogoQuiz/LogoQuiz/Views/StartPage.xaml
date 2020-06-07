@@ -30,12 +30,12 @@
 			</StackLayout>
 
 			<StackLayout VerticalOptions="CenterAndExpand">
-                <Button Command="{Binding NavigateToSettingsPageCommand}" 
+				<Button Command="{Binding NavigateToSettingsPageCommand}" 
 					FontFamily="{StaticResource MaterialFontFamily}"
 					Text="{x:Static helpers:MaterialDesignIconFont.Settings}"
-					TextColor="#419DB0"
+					TextColor="#9A9A9A"
 					FontSize="100"
-					BackgroundColor="#BFF4F2"
+					BackgroundColor="#DDDCDC"
 					WidthRequest="140" 
 					HeightRequest="140" 
 					BorderRadius="40"
@@ -52,9 +52,9 @@
 				<Button Command="{Binding QuitCommand}" 
 					FontFamily="{StaticResource MaterialFontFamily}"
 					Text="{x:Static helpers:MaterialDesignIconFont.Quit}"
-					TextColor="#419DB0"
+					TextColor="#F66565"
 					FontSize="100"
-					BackgroundColor="#BFF4F2"
+					BackgroundColor="#DDDCDC"
 					WidthRequest="140" 
 					HeightRequest="140" 
 					BorderRadius="40"

@@ -6,7 +6,7 @@ namespace LogoQuiz.Helpers
 {
     public class MaterialDesignIconFont
     {
-        public const string Play = "\uf431";
+        public const string Play = "\uf40a";
         public const string Settings = "\uf493";
         public const string Point = "\uf4ce";
         public const string Light = "\uf6e7";
