@@ -6499,6 +6499,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.3",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
       "PropertyChanged.Fody >= 3.2.8",
+      "Xamarin.Android.Support.v4 >= 28.0.0.3",
+      "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.3",
       "Xamarin.Essentials >= 1.5.2",
       "Xamarin.Forms >= 4.5.0.530"
     ]
@@ -6578,6 +6580,14 @@
           "PropertyChanged.Fody": {
             "target": "Package",
             "version": "[3.2.8, )"
+          },
+          "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "[28.0.0.3, )"
+          },
+          "Xamarin.Android.Support.v7.AppCompat": {
+            "target": "Package",
+            "version": "[28.0.0.3, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

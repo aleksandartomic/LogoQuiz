@@ -79,46 +79,52 @@ namespace LogoQuiz.ViewModels
         {
             if (HintCount > 0)
             {
-                switch (ClickHint)
+                if (ClickHint == Logo.Name.Count())
                 {
-                    case 0:
-                        string FirstCharLogo = Logo.Name.Substring(0, 1);
-                        LogoName = FirstCharLogo;
-                        ClickHint++;
-                        HintCount--;
-                        break;
-                    case 1:
-                        string SecoundCharLogo = Logo.Name.Substring(0, 2);
-                        LogoName = SecoundCharLogo;
-                        ClickHint++;
-                        HintCount--;
-                        break;
-                    case 2:
-                        string ThreeCharLogo = Logo.Name.Substring(0, 3);
-                        LogoName = ThreeCharLogo;
-                        ClickHint++;
-                        HintCount--;
-                        break;
-                    case 3:
-                        string FourCharLogo = Logo.Name.Substring(0, 4);
-                        LogoName = FourCharLogo;
-                        ClickHint++;
-                        HintCount--;
-                        break;
-                    case 4:
-                        string FiveCharLogo = Logo.Name.Substring(0, 5);
-                        LogoName = FiveCharLogo;
-                        ClickHint++;
-                        HintCount--;
-                        break;
-                    case 5:
-                        LogoName = Logo.Name;
-                        ClickHint++;
-                        HintCount--;
-                        Success();
-                        break;
-                    default:
-                        break;
+                    Success();
+                }
+                else
+                {
+                    switch (ClickHint)
+                    {
+                        case 0:
+                            string FirstCharLogo = Logo.Name.Substring(0, 1);
+                            LogoName = FirstCharLogo;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        case 1:
+                            string SecoundCharLogo = Logo.Name.Substring(0, 2);
+                            LogoName = SecoundCharLogo;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        case 2:
+                            string ThreeCharLogo = Logo.Name.Substring(0, 3);
+                            LogoName = ThreeCharLogo;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        case 3:
+                            string FourCharLogo = Logo.Name.Substring(0, 4);
+                            LogoName = FourCharLogo;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        case 4:
+                            string FiveCharLogo = Logo.Name.Substring(0, 5);
+                            LogoName = FiveCharLogo;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        case 5:
+                            LogoName = Logo.Name;
+                            ClickHint++;
+                            HintCount--;
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
                 Preferences.Set("HintCount", HintCount);

@@ -1,3 +1,7 @@
+C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.csprojAssemblyReference.cache
+C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.AssemblyInfoInputs.cache
+C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.AssemblyInfo.cs
+C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.csproj.CoreCompileInputs.cache
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\EFCoreMigrationsProject.exe
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\EFCoreMigrationsProject.deps.json
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\EFCoreMigrationsProject.runtimeconfig.json
@@ -53,10 +57,6 @@ C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\Mono.Androi
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\LogoQuiz.pdb
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\Mono.Android.pdb
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\bin\Debug\netcoreapp3.1\Mono.Android.xml
-C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.csprojAssemblyReference.cache
-C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.AssemblyInfoInputs.cache
-C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.AssemblyInfo.cs
-C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.csproj.CoreCompileInputs.cache
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\XamlC.stamp
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.csproj.CopyComplete
 C:\LogoQuiz\LogoQuiz\EFCoreMigrationsProject\obj\Debug\netcoreapp3.1\EFCoreMigrationsProject.dll

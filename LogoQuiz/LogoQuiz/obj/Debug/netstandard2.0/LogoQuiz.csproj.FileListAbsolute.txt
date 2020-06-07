@@ -1,10 +1,4 @@
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.deps.json
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.dll
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\ref\LogoQuiz.dll
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.pdb
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.dll
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.pdb
-C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.csprojAssemblyReference.cache
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\Controls\LevelControl.xaml.g.cs
@@ -17,6 +11,13 @@ C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\Views\StartPage.
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.AssemblyInfoInputs.cache
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.AssemblyInfo.cs
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.csproj.CoreCompileInputs.cache
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.deps.json
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.dll
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\ref\LogoQuiz.dll
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\LogoQuiz.pdb
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.csproj.Fody.CopyLocal.cache
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\XamlC.stamp
 C:\LogoQuiz\LogoQuiz\LogoQuiz\LogoQuiz\obj\Debug\netstandard2.0\LogoQuiz.csproj.CopyComplete

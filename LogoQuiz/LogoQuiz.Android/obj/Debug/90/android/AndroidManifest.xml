@@ -6,8 +6,9 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.VIBRATE" />
-  <application android:label="LogoQuiz.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/logoicon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logoicon" android:label="LogoQuiz" android:theme="@style/MainTheme" android:name="crc64a8f2bf3fb79fe3e0.MainActivity">
+  <application android:label="LogoQuiz.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:theme="@style/MainTheme" android:name="crc64a8f2bf3fb79fe3e0.MainActivity" />
+    <activity android:icon="@drawable/logoquizicon" android:label="LogoQuiz" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="crc64a8f2bf3fb79fe3e0.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

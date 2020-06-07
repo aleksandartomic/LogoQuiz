@@ -170,4 +170,7 @@
       <Name>LogoQuiz</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoQuizIcon.png" />
+  </ItemGroup>
 </Project>

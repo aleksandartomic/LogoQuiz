@@ -319,7 +319,6 @@
     <EmbeddedResource Include="Images\cars.jpg" />
     <EmbeddedResource Include="Images\cartoon-network.jpg" />
     <EmbeddedResource Include="Images\cat.jpg" />
-    <EmbeddedResource Include="Images\cathay-pacific.jpg" />
     <EmbeddedResource Include="Images\champion.jpg" />
     <EmbeddedResource Include="Images\chase.jpg" />
     <EmbeddedResource Include="Images\cheerios.jpg" />
@@ -327,7 +326,6 @@
     <EmbeddedResource Include="Images\chupa-chups.jpg" />
     <EmbeddedResource Include="Images\colemans.jpg" />
     <EmbeddedResource Include="Images\compaq.jpg" />
-    <EmbeddedResource Include="Images\converse.jpg" />
     <EmbeddedResource Include="Images\corona.jpg" />
     <EmbeddedResource Include="Images\crocs.jpg" />
     <EmbeddedResource Include="Images\danone.jpg" />

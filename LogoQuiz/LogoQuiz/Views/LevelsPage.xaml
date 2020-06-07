@@ -20,47 +20,80 @@
 
 	<ContentPage.ToolbarItems>
 		<ToolbarItem Text="Points">
-			<!--<ToolbarItem.IconImageSource>
-				<FontImageSource FontFamily="{StaticResource MaterialFontFamily}"
-								 Glyph="{x:Static helpers:MaterialDesignIconFont.Point}" Size="50"/>
-			</ToolbarItem.IconImageSource>-->
 		</ToolbarItem>
 		<ToolbarItem Text="{Binding Points}"/>
 	</ContentPage.ToolbarItems>
-	<StackLayout>
-		<controls:LevelControl LevelText="Level 1"
+	<ScrollView>
+		<StackLayout>
+			<controls:LevelControl LevelText="Level 1"
 							   NavigateCommand="{Binding NavigateToHomePageCommand}"
 							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 1'}"
 							   Visible="True"
 							   IsEnable="True"/>
 
-		<controls:LevelControl LevelText="Level 2"
+			<controls:LevelControl LevelText="Level 2"
 							   NavigateCommand="{Binding NavigateToHomePageCommand}"
 							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 2'}"
 							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 2'}"
 							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 2'}"/>
 
-		<controls:LevelControl LevelText="Level 3"
+			<controls:LevelControl LevelText="Level 3"
 							   NavigateCommand="{Binding NavigateToHomePageCommand}"
 							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 3'}"
 							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"
 							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 3'}"/>
-		
-		<controls:LevelControl LevelText="Level 4"
+
+			<controls:LevelControl LevelText="Level 4"
 							   NavigateCommand="{Binding NavigateToHomePageCommand}"
 							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 4'}"
 							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 4'}"
 							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 4'}"/>
 
-		<controls:LevelControl LevelText="Level 5"
+			<controls:LevelControl LevelText="Level 5"
 							   NavigateCommand="{Binding NavigateToHomePageCommand}"
 							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
 							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 5'}"
 							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 5'}"
 							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 5'}"/>
-	</StackLayout>
+
+			<controls:LevelControl LevelText="Level 6"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 6'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 6'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 6'}"/>
+
+			<controls:LevelControl LevelText="Level 7"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 7'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 7'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 7'}"/>
+
+			<controls:LevelControl LevelText="Level 8"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 8'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 8'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 8'}"/>
+
+			<controls:LevelControl LevelText="Level 9"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 9'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 9'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 9'}"/>
+
+			<controls:LevelControl LevelText="Level 10"
+							   NavigateCommand="{Binding NavigateToHomePageCommand}"
+							   IconFont="{x:Static helpers:MaterialDesignIconFont.LockOpen}"
+							   FormattedText="{Binding Logos, Converter={StaticResource TrueLogosConverter}, ConverterParameter='Level 10'}"
+							   Visible="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 10'}"
+							   IsEnable="{Binding Points, Converter={StaticResource OpenLevelConverter}, ConverterParameter='Level 10'}"/>
+		</StackLayout>
+	</ScrollView>
 </base:BasePage>

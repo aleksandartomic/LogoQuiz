@@ -11,7 +11,6 @@ namespace LogoQuiz.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string ImageUrl { get; set; }
-        public string Hint { get; set; }
         public bool IsSucceed { get; set; }
         public string Level { get; set; }
         public int Point { get; set; }
