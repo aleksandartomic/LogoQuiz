@@ -126,7 +126,7 @@ namespace LogoQuiz.ViewModels
 
             if (HintCount == 0)
             {
-                await Shell.Current.DisplayAlert("Hint", "You have no more hints!", "OK");
+                await Shell.Current.DisplayAlert("Hint", "You don't have hints, any more!", "OK");
             }
         }
 
